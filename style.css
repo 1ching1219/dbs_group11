@@ -11,14 +11,17 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
-a { text-decoration: none; }
-a:hover { text-decoration: none; }
-a{
+.signa { text-decoration: none; }
+.signa:hover { text-decoration: none; }
+.signa{
     text-decoration:none;
     color:#333;
     background-color: #b4a89c;
     padding: 10px 20px;
     border-radius: 1px;
+}
+.signa:hover{
+    box-shadow: 0 0 0.8px;
 }
 button, input {
     margin: 0;
@@ -82,6 +85,7 @@ input[type=text], input[type=password], input[type=email], input[type=tel]{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 150px;
 }
 tr{
     height: 30px;
@@ -150,6 +154,9 @@ th{
     margin: 10px;
     margin-top: 18px;
 }
+.btn:hover{
+    box-shadow: 0 0 0.8px;
+}
 .price_pos{
     position: relative;
     left: 100px;
@@ -158,3 +165,129 @@ th{
     position: relative;
     right: 29px;
 }
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 20px;
+    -webkit-transition: all .50s ease;
+    transition: all .50s ease;
+    background-color: #dcd2c8;
+  }
+  
+  header .logo2 {
+    padding-left: 30px;
+  }
+  
+  header .logo2 img {
+    height: 100px;
+  }
+  
+  header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  
+  header .navbar a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    -webkit-transition: all .50s ease;
+    transition: all .50s ease;
+    color: #33332d;
+    text-decoration: none;
+    font-family: 'Noto Serif JP', serif;
+    position: relative;
+  }
+  
+  header .navbar a::after {
+    content: " ";
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: -3px;
+    border-bottom: 1px solid #f4f8fa;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  
+  header .navbar a:hover::after {
+    right: 0%;
+    left: 0%;
+  }
+  
+  header .navbar a:hover {
+    color: #f4f8fa;
+  }
+  
+  header .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  header .main a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: #33332d;
+    font-size: 1rem;
+    font-weight: 500;
+    -webkit-transition: all .50s ease;
+    transition: all .50s ease;
+    text-decoration: none;
+  }
+  
+  header .main .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  header .main .user span {
+    font-size: 30px;
+    -webkit-transition: all .50s ease;
+    transition: all .50s ease;
+  }
+  
+  header .main .user span:hover {
+    color: #f4f8fa;
+  }
+  
+  header .main .cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  header .main .cart span {
+    font-size: 30px;
+    -webkit-transition: all .50s ease;
+    transition: all .50s ease;
+  }
+  
+  header .main .cart span:hover {
+    color: #f4f8fa;
+  }

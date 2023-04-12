@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +18,19 @@
     <title>Cologné | LOGIN</title>
 </head>
 <body style="background-color: #dcd2c8;">
+    <header>
+        <a href="home.html" class="logo2"><img src="img/cologne.png"></a>
+        <ul class="navbar">
+            <li><a href="product_list.html">身體香氛</a></li>
+            <li><a href="product_list.html">居家香氛</a></li>
+            <li><a href="product_list.html">芳香療法</a></li>
+            <li><a href="product_list.html">香氛偏好</a></li>
+        </ul>
+        <div class="main">
+            <a href="login.html" class="user"><span class="material-symbols-outlined">account_circle</span></a>
+            <a href="cart.html" class="cart"><span class="material-symbols-outlined">shopping_cart</span></a>
+        </div>
+    </header>
     <div id="login_content">
         <div id = "login_block">
             <form action="" method="post">
@@ -26,10 +46,6 @@
                     </tr>
                     <tr>
                         <th></th>
-                        <td><input type="checkbox"> 保持登陸狀態</td>
-                    </tr>
-                    <tr>
-                        <th></th>
                         <td><button type="submit" class="btn" style="width:240px; margin: 0px;">登入</button></td>
                     </tr>
                 </table>
@@ -38,7 +54,7 @@
         <div id = "signup_block">
             <h1>會員註冊</h1>
             <p>會員登入前請先註冊</p>
-            <a href="signup.html">會員註冊</a>
+            <a class="signa" href="signup.html">會員註冊</a>
         </div>
     </div>
 </body>
