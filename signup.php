@@ -21,7 +21,7 @@
 
 <body style="background-color: #dcd2c8;">
     <header>
-        <a href="home.html" class="logo2"><img src="img/cologne.png"></a>
+        <a href="home.php" class="logo2"><img src="img/cologne.png"></a>
         <ul class="navbar">
             <li><a href="product_list.html">身體香氛</a></li>
             <li><a href="product_list.html">居家香氛</a></li>
@@ -29,38 +29,39 @@
             <li><a href="product_list.html">香氛偏好</a></li>
         </ul>
         <div class="main">
-            <a href="login.html" class="user"><span class="material-symbols-outlined">account_circle</span></a>
+            <a href="login.php" class="user"><span class="material-symbols-outlined">account_circle</span></a>
             <a href="cart.html" class="cart"><span class="material-symbols-outlined">shopping_cart</span></a>
         </div>
     </header>
+    <br><br><br>
     <div id="signup_content">
     
-        <form action="login.html" method="post">
+        <form action="member.php?method=signup" method="post">
             <h1>新會員註冊</h1>
             <table class="table_inline_bigger">
                 <tr>
                     <th>名稱：</th>
-                    <td><input type="text" name="" id="" required></td>
+                    <td><input type="text" name="M_NAME" id="" required></td>
                 </tr>
                 <tr>
                     <th>信箱：</th>
-                    <td><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="" id="" required></td>
+                    <td><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="EMAIL" id="" required></td>
                 </tr>
                 <tr>
                     <th>密碼：</th>
-                    <td><input type="password" name="" id="" required></td>
+                    <td><input type="password" name="PASS" id="" required></td>
                 </tr>
                 <tr>
                     <th>生日：</th>
-                    <td><input type="date" name="" id="" required></td>
+                    <td><input type="date" name="BIRTHDAY" id="" required></td>
                 </tr>
                 <tr>
                     <th>電話號碼：</th>
-                    <td><input type="tel" pattern="[09][0-9]{9}" name="" id="" required></td>
+                    <td><input type="tel" pattern="[09][0-9]{9}" name="PHONE" id="" required></td>
                 </tr>
                 <tr>
                     <th>地址：</th>
-                    <td><input type="text" name="" id="" required></td>
+                    <td><input type="text" name="ADDRESS" id="" required></td>
                 </tr>
             </table>
             <br>

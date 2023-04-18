@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+    if(isset($_SESSION["name"])){
+        echo "<script>";
+        echo "window.location.href = './home.php';";
+        echo "</script>";
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +29,7 @@
 </head>
 <body style="background-color: #dcd2c8;">
     <header>
-        <a href="home.html" class="logo2"><img src="img/cologne.png"></a>
+        <a href="home.php" class="logo2"><img src="img/cologne.png"></a>
         <ul class="navbar">
             <li><a href="product_list.html">身體香氛</a></li>
             <li><a href="product_list.html">居家香氛</a></li>
@@ -27,22 +37,22 @@
             <li><a href="product_list.html">香氛偏好</a></li>
         </ul>
         <div class="main">
-            <a href="login.html" class="user"><span class="material-symbols-outlined">account_circle</span></a>
+            <a href="login.php" class="user"><span class="material-symbols-outlined">account_circle</span></a>
             <a href="cart.html" class="cart"><span class="material-symbols-outlined">shopping_cart</span></a>
         </div>
     </header>
     <div id="login_content">
         <div id = "login_block">
-            <form action="" method="post">
+            <form action="member.php?method=login" method="post">
                 <h1 style="text-align: center;">登入</h1>
                 <table class="table_inline_bigger">
                     <tr>
                         <th>信箱：</th>
-                        <td><input type="email" id="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></td>
+                        <td><input type="email" name="acc" id="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></td>
                     </tr>
                     <tr>
                         <th>密碼：</th>
-                        <td><input type="password" name="" id=""></td>
+                        <td><input type="password" name="pass" id=""></td>
                     </tr>
                     <tr>
                         <th></th>
@@ -54,7 +64,7 @@
         <div id = "signup_block">
             <h1>會員註冊</h1>
             <p>會員登入前請先註冊</p>
-            <a class="signa" href="signup.html">會員註冊</a>
+            <a class="signa" href="signup.php">會員註冊</a>
         </div>
     </div>
 </body>

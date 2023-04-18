@@ -1,3 +1,14 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION["name"])){
+        echo "<script>";
+        echo "window.location.href = './login.php?method=login';";
+        echo "</script>";
+        exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +43,7 @@
         <div id="popup" style="width: 100%;">
             <!-- navbar -->
             <header>
-                <a href="home.html" class="logo2"><img src="img/cologne.png"></a>
+                <a href="home.php" class="logo2"><img src="img/cologne.png"></a>
                 <ul class="navbar">
                     <li><a href="product_list.html">身體香氛</a></li>
                     <li><a href="product_list.html">居家香氛</a></li>
@@ -40,7 +51,7 @@
                     <li><a href="product_list.html">香氛偏好</a></li>
                 </ul>
                 <div class="main">
-                    <a href="login.html" class="user"><span class="material-symbols-outlined">account_circle</span></a>
+                    <a href="member.php?method=logout" class="user"><span class="material-symbols-outlined">account_circle</span></a>
                     <a href="cart.html" class="cart"><span class="material-symbols-outlined">shopping_cart</span></a>
                 </div>
             </header>
