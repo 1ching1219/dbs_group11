@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    if(isset($_SESSION["name"])){
+    if(isset($_SESSION["mid"])){
         echo "<script>";
         echo "window.location.href = './home.php';";
         echo "</script>";

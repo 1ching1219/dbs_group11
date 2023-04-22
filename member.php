@@ -30,7 +30,7 @@
                 if($row["PASS"] == $pass){
                     $status = 1;
                     // 將會員名稱存入session
-                    $_SESSION["name"] = $acc;
+                    $_SESSION["mid"] = $row['MID'];
                     $msg = "登入成功";
                 }else{
                     $status = 0;
@@ -73,7 +73,7 @@
                     $status = 1;
                     $msg = "註冊成功";
                     // 將會員名稱存入session
-                    $_SESSION["name"] = $email;
+                    $_SESSION["mid"] = $mid;
                 }else{
                     $msg = "處理失敗";
                 }
