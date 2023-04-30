@@ -1,0 +1,272 @@
+body{
+    color: #33332d;
+    background-color: #dcd2c8;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.navbar{
+    padding: 0;
+    display: flex;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+    justify-content:center;
+    z-index: 1;
+    background-color: #dcd2c8;
+}
+
+.navbar-brand{
+    color: #33332d;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    height: 80px;
+}
+
+i{
+    font-size: 2rem;
+    -webkit-text-stroke: 1px; 
+}
+
+.icon{
+    border: 0;
+    background-color: #dcd2c8;
+    margin: 0.5%;
+}
+
+/*slideshow gallery*/
+* {
+  box-sizing: border-box;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.view{
+    width: 95%;
+}
+
+/*第一章照片顯示*/
+#first_img{
+    display: block;
+}
+
+.cursor {
+    cursor: pointer;
+    width: 600px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev, .next {
+    margin-top: 8%;
+    cursor: pointer;
+    color: #86817b;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev:hover, .next:hover {
+    color: #33332d;
+}
+
+.row {
+    justify-content: space-around;
+    width: 100%;
+    margin: 2% 0%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.smallimg{
+    margin-top: -9.5%;
+    margin-left: 1%;
+    width: 92%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.demo {
+    width: 80px;
+}
+
+.demo:hover {
+    opacity: 0.6;
+}
+
+h4{
+    font-weight: 600;
+}
+
+.bi-heart{
+    margin-left: 75%;
+}
+
+.bi-heart:hover{
+    cursor: pointer;
+}
+
+h6{
+    line-height: 2;
+}
+
+.qty-input {
+    margin-top: 5%;
+	color: #33332d;
+	display: flex;
+	align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.qty-count--minus{
+    height: 37.33px;
+    color: #33332d;
+    border-radius: 0.2rem 0rem 0rem 0.2rem;
+    margin-left: 3%;
+    background-color: #ffffff;
+    border: 1px solid #b4a89c;
+    border-right: 0;
+}
+
+.product-qty{
+    padding: 0;
+    color: #33332d;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 18%;
+    background-color: #ffffff;
+    border: 0;
+    border-top: 1px solid #b4a89c;
+    border-bottom: 1px solid #b4a89c;
+}
+
+.qty-count--add{
+    height: 37.33px;
+    color: #33332d;
+    border-radius: 0rem 0.2rem 0.2rem 0rem;
+    background-color: #ffffff;
+    border: 1px solid #b4a89c;
+    border-left: 0;
+}
+
+.btn{
+    margin-top: 8%;
+    background-color: #b4a89c;
+    color: #33332d;
+    border-radius: 0;
+    padding: 4%;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    background-color: #cbbdaf;
+    opacity: 0.8;
+}
+
+hr{
+    height: 1px;
+    background-color: #33332d;
+}
+
+.comment_func{
+    display: flex;
+    justify-content: space-between
+}
+
+.comment_btn_group{
+    float: right;
+}
+
+.comment_btn{
+    width: 35px;
+    background-color: #dcd2c8;
+    border: 0;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    padding: 2%;
+}
+
+.star {
+    width: 30px;
+    margin: 0% 5%;
+}
+
+.c_star {
+    width: 18px;
+}
+
+.u_star {
+    width: 25px;
+    margin: 2% 7% 2% 7%;
+}
+
+.update{
+    text-align: center;
+    margin-left: 83%;
+    border-radius: 0.3rem;
+    padding: 1.5%;
+    margin-top: 2%;
+}
+
+#rate {
+    display: none;
+}
+
+.form-control{
+    border-radius: 0.3rem;
+}
+
+.submit{
+    text-align: center;
+    margin-left: 83%;
+    border-radius: 0.3rem;
+    padding: 2% 3%;
+}
+
+.content{
+    height: 365px;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {       /* width */
+    width: 5px;
+}
+
+.content::-webkit-scrollbar-track {     /* Track */
+    background: #f1f1f1; 
+}
+
+.content::-webkit-scrollbar-thumb {     /* Handle */
+    background: #33332db9; 
+}
+
+.content::-webkit-scrollbar-thumb:hover {       /* Handle on hover */
+    background: #33332dd8; 
+}
+
+
+

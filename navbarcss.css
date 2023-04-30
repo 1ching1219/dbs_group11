@@ -1,0 +1,113 @@
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        transition: all 0.5s ease;
+        background-color: #b4a89c;
+        }
+        header .logo2 {
+        padding-left: 30px;
+        }
+        header .logo2 img {
+        height: 100px;
+        }
+        header .navbar {
+        display: flex;
+        list-style: none;
+        }
+        header .navbar li a {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 5px 0;
+        margin: 0px 30px;
+        transition: all 0.5s ease;
+        color: #33332d;
+        text-decoration: none;
+        font-family: "Noto Serif JP", serif;
+        }
+
+        .main {
+        display: flex;
+        align-items: center;
+        }
+        .main a {
+        margin-right: 25px;
+        margin-left: 10px;
+        color: #33332d;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.5s ease;
+        text-decoration: none;
+        }
+        .main .user {
+        display: flex;
+        align-items: center;
+        }
+        .main .user span {
+        font-size: 30px;
+        transition: all 0.5s ease;
+        }
+        .main .user span:hover {
+        color: #f4f8fa;
+        }
+        .main .cart {
+        display: flex;
+        align-items: center;
+        }
+        .main .cart span {
+        font-size: 30px;
+        transition: all 0.5s ease;
+        }
+        .main .cart span:hover {
+        color: #f4f8fa;
+        }
+
+        .material-symbols-outlined {
+        font-size: 29px;
+        }
+
+        .btn-secondary {
+        background-color: transparent;
+        border-color: transparent;
+        }
+        .btn-secondary:hover {
+        background-color: transparent;
+        border-color: transparent;
+        }
+
+        .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+        background-color: transparent;
+        border-color: transparent;
+        }
+
+        .btn-secondary.focus, .btn-secondary:focus {
+        box-shadow: none;
+        }
+
+        .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+        box-shadow: none;
+        }
+
+        .btn.focus, .btn:focus {
+        outline: none;
+        box-shadow: none;
+        }
+
+        .dropdown-toggle::after {
+        border: none;
+        }
+
+        .dropdown-item {
+        transition: 0.5s;
+        width: 80%;
+        }
+        .dropdown-item:hover {
+        background: linear-gradient(to right, #b4a89c, #f4f8fa);
+        }
