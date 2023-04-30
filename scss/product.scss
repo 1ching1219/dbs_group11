@@ -1,0 +1,156 @@
+@import "variable";
+.main_product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $first_c;
+    .product_main_div {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        background-color: $first_c;
+        margin: 15% 0%;
+        .pagination {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 3% 20%;
+            align-items: center;
+            .number {
+                width: 40px;
+                list-style: none;
+                font-size: 18px;
+                font-family: "Outfit";
+                color: $dark_c;
+                font-family: inherit;
+                font-weight: 800;
+                cursor: pointer;
+                position: relative;
+                border: none;
+                background: none;
+                transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                transition-duration: 400ms;
+                transition-property: color;
+                display: flex;
+                justify-content: center;
+                &:hover::after {
+                    width: 100%;
+                    left: 0%;
+                }
+                &:focus::after {
+                    width: 100%;
+                    left: 0%;
+                }
+                &::after {
+                    content: "";
+                    pointer-events: none;
+                    bottom: -2px;
+                    left: 50%;
+                    position: absolute;
+                    width: 0%;
+                    height: 2px;
+                    background-color: $second_c;
+                    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                    transition-duration: 400ms;
+                    transition-property: width, left;
+                }
+            }
+            .arrow {
+                color: #090909;
+                padding: 0.7em 1.7em;
+                font-size: 18px;
+                border-radius: 0.5em;
+                background: radial-gradient(circle farthest-side at center, #ffffff, #f4f4f4);
+                border: 1px solid #f4f4f4;
+                transition: all .3s;
+                box-shadow: 6px 6px 12px #c5b4a4, -6px -6px 12px #efe7df;
+                list-style: none;
+                width: 1px;
+                font-family: "Outfit";
+                display: flex;
+                justify-content: center;
+                &:hover {
+                    box-shadow: 13px 18px 12px #c5b4a4, -6px -6px 12px #efe7df
+                }
+                &:focus {
+                    box-shadow: inset 6px 6px 12px 0px #c5b4a4, 8px 9px 12px #c5b4a4;
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+header {
+    background-color: $first_c;
+}
+
+.a_product {
+    width: 20%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5%;
+    .product_info {
+        border-radius: 4%;
+        background-color: $p_bgc;
+        width: 95%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: .2s;
+        &:hover {
+            box-shadow: 10px 11px 20px #c7b0a08f;
+            transform: translateY(-0.4rem);
+            cursor: pointer;
+            .product_pic {
+                transform: translateY(2.5rem);
+                border-radius: 3%;
+                filter: brightness(70%);
+            }
+            .p_desc {
+                color: transparent;
+            }
+            .price {
+                color: transparent;
+            }
+            .p_title {
+                color: #ffffff;
+                position: absolute;
+                margin: 53% 0%;
+            }
+        }
+        p {
+            margin: 0px;
+            color: $dark_c;
+        }
+        .p_desc {
+            font-family: $pname_font;
+            font-size: 16px;
+        }
+        .product_pic {
+            width: 100%;
+            height: 70%;
+            border-radius: 3% 3% 0 0;
+            transition: .2s;
+            object-fit: cover;
+        }
+        .p_title {
+            font-size: 20px;
+            font-family: $pname_font;
+            transition: .2s;
+        }
+        .price {
+            font-family: $pdesc_font;
+            font-size: 15px;
+        }
+        box-shadow:0px 5px 20px rgba(176, 160, 143, 0.78)
+    }
+}
